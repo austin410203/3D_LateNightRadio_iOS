@@ -1,0 +1,1118 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild -project LateNightRadio.xcodeproj -scheme LateNightRadio -configuration Debug -sdk iphonesimulator -destination "generic/platform=iOS Simulator" -derivedDataPath build CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = iphonesimulator26.5
+
+Resolve Package Graph
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  LNRCore: /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+
+2026-11-08 02:43:03.209 xcodebuild[3997:15949] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (3 targets)
+    Target 'LateNightRadio' in project 'LateNightRadio'
+        ➜ Explicit dependency on target 'LNRCore' in project 'LNRCore'
+    Target 'LNRCore' in project 'LNRCore'
+        ➜ Explicit dependency on target 'LNRCore' in project 'LNRCore'
+    Target 'LNRCore' in project 'LNRCore' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: b056f015af68cdb804375c98896ecebc
+Build description path: /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/XCBuildData/b056f015af68cdb804375c98896ecebc.xcbuilddata
+ClangStatCache /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache
+
+CreateBuildDirectory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products
+
+CreateBuildDirectory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex
+
+CreateBuildDirectory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio-97d5c762bf88c43678641f8e16cf8794-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio-97d5c762bf88c43678641f8e16cf8794-VFS-iphonesimulator/all-product-headers.yaml
+
+CreateBuildDirectory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/PackageFrameworks
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/PackageFrameworks
+
+CreateBuildDirectory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-create-build-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio_const_extract_protocols.json (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.SwiftFileList (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.SwiftConstValuesFileList (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.LinkFileList (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio-OutputFileMap.json (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio_const_extract_protocols.json (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.SwiftFileList (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.SwiftConstValuesFileList (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.LinkFileList (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio-OutputFileMap.json (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio.hmap (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio.hmap
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio.DependencyStaticMetadataFileList (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio.DependencyMetadataFileList (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-project-headers.hmap (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-project-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-own-target-headers.hmap (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-generated-files.hmap (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-generated-files.hmap
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-all-target-headers.hmap (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-all-non-framework-target-headers.hmap (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-DebugDylibPath-normal-x86_64.txt (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-DebugDylibPath-normal-x86_64.txt
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-DebugDylibPath-normal-arm64.txt (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-DebugDylibInstallName-normal-x86_64.txt (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-DebugDylibInstallName-normal-x86_64.txt
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-DebugDylibInstallName-normal-arm64.txt (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-DebugDylibInstallName-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore_const_extract_protocols.json (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.SwiftFileList (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.SwiftConstValuesFileList (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.LinkFileList (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore-OutputFileMap.json (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore_const_extract_protocols.json (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.SwiftFileList (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.SwiftConstValuesFileList (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.LinkFileList (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore-OutputFileMap.json (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/LNRCore.modulemap (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/LNRCore.modulemap
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/LNRCore.DependencyStaticMetadataFileList (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/LNRCore.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/LNRCore.DependencyMetadataFileList (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    write-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/LNRCore.DependencyMetadataFileList
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/LNRCore.modulemap /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/LNRCore.modulemap (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/LNRCore.modulemap /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator
+
+MkDir /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    /bin/mkdir -p /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app
+
+SwiftDriver LNRCore normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LNRCore -Onone @/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Session.modulevalidation -package-name _d_latenightradio_ios -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore_const_extract_protocols.json -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources-normal/x86_64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources/x86_64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore-Swift.h -working-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver LNRCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LNRCore -Onone @/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Session.modulevalidation -package-name _d_latenightradio_ios -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore_const_extract_protocols.json -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore-Swift.h -working-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ptrauth-DBCGERECWC9AKRKJFCTM5384H.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdbool-12O4ZBHTDOQLJ5BFC7BF160A5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdarg-29C9K0TF9UQUG0KSUAWXRA40O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ptrcheck-BU8BTEP0YNW9BFTZJNGSHWH09.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_SwiftConcurrencyShims-5EW6D8O3IKTBSYHHCA7C87V0I.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/SwiftShims-8WQQ21EUVO1J5NPRLIJV3GHNU.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_float-5L3MDDA5CLQASUWSY531X8VPZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdarg-3HT6DCPCFQV1V6ZQQUNKN1CLC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_float-FWH9B6IYTQNZN7E07VHHG2Y2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ptrcheck-6TH5E6C90Q6F83Y3KTLQZJMYP.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stddef-CGYSX2NY1LDUMZNRD8J8SHYB1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ptrauth-5GV399MC9WCS16IWRYRF2GDIC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stddef-8GGQN0GPXPU28MDA4VB3SNA1N.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_AvailabilityInternal-43QK40A94QT7BDNU90LOEGG9F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdbool-2Q8SMV0KWKPHXOO9NXGDZLKK9.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_SwiftConcurrencyShims-F4BD3G9XDX9JXY2U0599B5XHC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_AvailabilityInternal-D9K8TRN5D2DRZVI09HMC7FSRI.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_DarwinFoundation1-35TUXH0DMOLHGUONKYBPT5FX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/SwiftShims-1ZG5C4DTRJ8RQWC2ERH4WQ6EP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_DarwinFoundation1-8YD3XXSNK076TFM8EKOG6EDJG.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_limits-3FVC1U4REXKF3TUM97VGKFM9V.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_DarwinFoundation2-ERZ70XWV3ZMJZV06PXV8R29O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_limits-87OAH3RRGN1ZXFX94EH0HW1L6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_DarwinFoundation2-ABODQC1AILAHHJMND0YNJYSEN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdint-52QTXEKVTIDKXA89H19UUAXZU.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/sys_types-F2YF89SS3LKHUZ2XMCGC0HASU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/sys_types-4PQ4I1F09ZGIIHS4OI36WBEFX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdint-BACTT249C2U39D3MLF2S35RL7.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_DarwinFoundation3-83Y9DMKEBBOQR4H9L72VOKFPP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_DarwinFoundation3-50O2RO2PONCEV96EZE57TVH0J.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_inttypes-DAJKPZBZXT8QT5X8N62DKR3CV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_inttypes-53WSILC32UEP4NA1P8G39DH57.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Darwin-A579WH889CZ91KQ60VM7U9KTX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Darwin-E7V3OQ10832U5Z7Q9D6P000EG.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ObjectiveC-3OXFZEY625MAJFA2946GR3Z33.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ObjectiveC-DYVXZ9245PP4WVZEG71UKTU8P.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/os_object-915THOQDADYHDKVMWYX7SGG3F.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/os_workgroup-1WI2OYAVA0XSOCL4UWD3SWZ5T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/os_object-B60ETIG8SAFH97K6UYRU4PN94.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Dispatch-4CRWL9FC6HHP8JUOOSR0H7JY1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/os_workgroup-DAEI1CSUV59UQP6DEDAE9ONDJ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/XPC-8G80RJ0SQNIC6UPCV67E6WLXP.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreFoundation-5SHHKOLLNFA1WG1FU7T5YCBM2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Dispatch-90RXGHW6PAUH1E1SMDKL9U1CX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreFoundation-9OMEHBAST5O4K1YSXHOAFDP4N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/XPC-3Z8NZXH9KI2VIDYYUS5M6B95T.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Security-E9HIPEXBATAJZHQB1C2PL4MBE.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CFNetwork-B044BVNQEAL770NXNBQO0N1DF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Security-9NW0WXNL2CY7LH9ZGLQ6K2ADF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CFNetwork-EDYQKH62V9DH61550OL22OKE4.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Foundation-2AD337LDA94GT6S14X36TZNSD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Foundation-90JIJ0RX44BDZ3OS5SM8ZUQL6.pcm
+
+SwiftEmitModule normal x86_64 Emitting\ module\ for\ LNRCore (in target 'LNRCore' from project 'LNRCore')
+EmitSwiftModule normal x86_64 (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    
+
+SwiftCompile normal x86_64 Compiling\ Mock.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Sources/LNRCore/Mock.swift (in target 'LNRCore' from project 'LNRCore')
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Sources/LNRCore/Mock.swift (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    
+
+SwiftCompile normal x86_64 Compiling\ Rules.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Sources/LNRCore/Rules.swift (in target 'LNRCore' from project 'LNRCore')
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Sources/LNRCore/Rules.swift (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ LNRCore (in target 'LNRCore' from project 'LNRCore')
+
+EmitSwiftModule normal arm64 (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal x86_64 Emitting module for LNRCore (in target 'LNRCore' from project 'LNRCore')
+
+SwiftDriver\ Compilation\ Requirements LNRCore normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LNRCore -Onone @/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Session.modulevalidation -package-name _d_latenightradio_ios -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore_const_extract_protocols.json -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources-normal/x86_64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources/x86_64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore-Swift.h -working-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for LNRCore (in target 'LNRCore' from project 'LNRCore')
+
+SwiftDriver\ Compilation\ Requirements LNRCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LNRCore -Onone @/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Session.modulevalidation -package-name _d_latenightradio_ios -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore_const_extract_protocols.json -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore-Swift.h -working-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.swiftmodule (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.swiftmodule /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule
+
+SwiftMergeGeneratedHeaders /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/LNRCore-Swift.h /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore-Swift.h /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore-Swift.h (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-swiftHeaderTool -arch arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore-Swift.h -arch x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore-Swift.h -o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/LNRCore-Swift.h
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.swiftdoc (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.swiftdoc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/x86_64-apple-ios-simulator.abi.json /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.abi.json (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.abi.json /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/x86_64-apple-ios-simulator.abi.json
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.swiftmodule (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.swiftmodule /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.swiftdoc (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.swiftdoc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.abi.json (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.abi.json /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.swiftsourceinfo (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.swiftsourceinfo /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.swiftsourceinfo (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.swiftsourceinfo /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftCompile normal arm64 Compiling\ Mock.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Sources/LNRCore/Mock.swift (in target 'LNRCore' from project 'LNRCore')
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Sources/LNRCore/Mock.swift (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ Rules.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Sources/LNRCore/Rules.swift (in target 'LNRCore' from project 'LNRCore')
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Sources/LNRCore/Rules.swift (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal x86_64 Compiling Mock.swift (in target 'LNRCore' from project 'LNRCore')
+
+SwiftDriverJobDiscovery normal x86_64 Compiling Rules.swift (in target 'LNRCore' from project 'LNRCore')
+
+SwiftCompile normal arm64 Compiling\ Data.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Sources/LNRCore/Data.swift (in target 'LNRCore' from project 'LNRCore')
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Sources/LNRCore/Data.swift (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    
+
+SwiftCompile normal x86_64 Compiling\ Data.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Sources/LNRCore/Data.swift (in target 'LNRCore' from project 'LNRCore')
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Sources/LNRCore/Data.swift (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling Mock.swift (in target 'LNRCore' from project 'LNRCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Rules.swift (in target 'LNRCore' from project 'LNRCore')
+
+MkDir /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_output/unthinned (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    /bin/mkdir -p /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_output/unthinned
+
+MkDir /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_output/thinned (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    /bin/mkdir -p /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_output/thinned
+
+GenerateAssetSymbols /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Assets.xcassets (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/actool /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Assets.xcassets --compile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app --output-format human-readable-text --notices --warnings --export-dependency-info /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_dependencies --output-partial-info-plist /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --minimum-deployment-target 17.0 --platform iphonesimulator --bundle-identifier com.austin410203.latenightradio --generate-swift-asset-symbol-extensions NO --generate-swift-asset-symbols /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+SwiftDriverJobDiscovery normal arm64 Compiling Data.swift (in target 'LNRCore' from project 'LNRCore')
+
+CompileAssetCatalogVariant thinned /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Assets.xcassets (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/actool /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Assets.xcassets --compile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --minimum-deployment-target 17.0 --platform iphonesimulator
+/* com.apple.actool.compilation-results */
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_generated_info.plist_thinned
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_output/thinned/AppIcon60x60@2x.png
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_output/thinned/AppIcon76x76@2x~ipad.png
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_output/thinned/Assets.car
+
+
+SwiftDriver\ Compilation LNRCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LNRCore -Onone @/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Session.modulevalidation -package-name _d_latenightradio_ios -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore_const_extract_protocols.json -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore-Swift.h -working-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/Binary/LNRCore.o normal arm64 (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -r -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -F/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.swiftmodule @/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore-linker-args.resp -o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/Binary/LNRCore.o
+
+SwiftDriver LateNightRadio normal arm64 com.apple.xcode.tools.swift.compiler (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-SwiftDriver -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LateNightRadio -Onone @/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-generated-files.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-own-target-headers.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio-97d5c762bf88c43678641f8e16cf8794-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-project-headers.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio-Swift.h -working-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver LateNightRadio normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-SwiftDriver -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LateNightRadio -Onone @/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-generated-files.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-own-target-headers.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio-97d5c762bf88c43678641f8e16cf8794-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-project-headers.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources-normal/x86_64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/x86_64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio-Swift.h -working-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal x86_64 Compiling Data.swift (in target 'LNRCore' from project 'LNRCore')
+
+SwiftDriver\ Compilation LNRCore normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LNRCore -Onone @/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Session.modulevalidation -package-name _d_latenightradio_ios -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore_const_extract_protocols.json -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources-normal/x86_64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources/x86_64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore-Swift.h -working-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/LateNightRadio.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ptrauth-6VKA40NVT14ZFCERZPLKO0NXF.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/DeveloperToolsSupport-A5VNRSMEBZ3RLN4NTV1FAATAD.pcm
+
+Ld /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/Binary/LNRCore.o normal x86_64 (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios17.0-simulator -r -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -F/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.swiftmodule @/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore-linker-args.resp -o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/Binary/LNRCore.o
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdbool-3DTTLGV0GIUGFQVABNIWIG4JT.pcm
+
+CreateUniversalBinary /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.o normal arm64\ x86_64 (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/Binary/LNRCore.o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/Binary/LNRCore.o -output /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.o
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ptrauth-2CO2INYWRQKNCVMIH1L0HIF5M.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_AvailabilityInternal-IKX4PAHMU3J84A1JN5C44EDF.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ptrcheck-BV5TLI7R19F09ICXUJVLDG9MI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stddef-7Q929BWAETKIU6LUHUOGOF2CT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/DeveloperToolsSupport-6JMJK484DRSH8TGBYKI2AWAN7.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_SwiftConcurrencyShims-9YRSGNGQ5JBH7SLY2G3H0D3X6.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdbool-61VBJJIF6DKWGU5RF5LG5RE57.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_SwiftConcurrencyShims-DSF3CAVA59A0AVZ23VLS8DRTJ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdarg-2KY73K3JOLPO5H4QFSIG9PX97.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_DarwinFoundation1-16EMRHMRNQZBUUM8L7PJIULZS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ptrcheck-EF344RFS3LZY579XWB6IFI36Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_AvailabilityInternal-BNLJ8BB83P4A2BD1BKHEHRF3G.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/SwiftShims-3SGZGPM8C1IAPDXLX92ZSBWH8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_float-E43TRXCH408SM5B498AHOPOPJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdarg-H97EPW87ZDWW72Y8KK6PDGHP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_DarwinFoundation1-63VMTUG2NWRK1VT0KE5WMO76S.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_float-5ECOADERMX8A7SE5PMFT1N78H.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stddef-EFK9U4C1O3SA0R2W4YBSYNNOH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/SwiftShims-A9G92NWN954PBWSRCIDZNXFGC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_DarwinFoundation2-4IDLG11R7L0X5UECJQGVZEP9L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_limits-195L2VIOMEAPUVTR8AYEMJXT0.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_DarwinFoundation2-R9TYL3H4RSFDA0AO8TY6OH4U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdint-7CVM45PUPZCXIRKL1NLHQEKPN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/sys_types-18OAVW9383QGL4RFZZRRGZ9BA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdatomic-21B1HTD5PZ56UKTN8I9K3FYP7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_intrinsics-5XY2O6C1J9E45C5Q5GIIHLHRR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_DarwinFoundation3-17PS5WCPDK43WD96JGQT4IHF0.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_tgmath-BHQMJ8VBDKFBQT01I2AA4O5UP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_inttypes-17WSUBESLVQ481J7Y519D0ASS.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/sys_types-38FA5475OEX8GU2EKE4XUUKNS.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdint-EYBXVVKX5ZMD5L9V197H3W9K1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Darwin-542QKFLUI55REMFS7QDT502BS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_tgmath-16Q6KFHOOHLAYLK04EQKAJJ6M.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_DarwinFoundation3-D1IEUSECDAVBG0F4TT52HWK1G.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_stdatomic-DWSG12T4RDI2KXTCE36FFVECY.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_intrinsics-6QLPHFSV62DHC0E61NPN94JJ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_inttypes-4IRV8OMFWSZPTCN6KHC53WJ9E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ObjectiveC-5OP4DVCG1QSY1NLCE8Q51YD0L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/simd-5IF2GSZ9OF7HJMBE3BQ8YY3Z7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/os_object-16A1ZLS45WCRLGGCFIYSKETY7.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/simd-3XNCKSNS9XLHYLS96VBCR970.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/os_workgroup-72C5ON5XPGTBTWNIB6ZD5OL6Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Spatial-7EMLX3QSV3T6C0J3A7VKKTC2Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Dispatch-A41RF4C8GMYS5GVFQPWCYRXCV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Spatial-1HIKFTIK8VGFND1V6SQWHTIOW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/dnssd-9ISOVJF24D705THTHQ8B781E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/XPC-DRBQ8VPNGT5GWSYR49X544QZ6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/MachO-2O06J6Z70S72E9WKYWCTHF763.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreFoundation-EF4VRU2ZJFCBTG6N4DNPHUC22.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/_Builtin_limits-1NFMSE8Y6GP7T1AROHZ4EW0E5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/os-4EABFINTCWB3FYYLTN8SWO84Q.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Darwin-4NUIG7QJWN4VPBTI7YW9HO7M0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreAudioTypes-64KCIBF442N48Q3895JXMI50U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CFNetwork-DLRNUCTJFHM7OSS4HNHZN2F98.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreAudio-1M5GOH4JGWV4H6OSGOJ5K5GZX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Security-DPD2H0WQA4FGBDETX86DLUPYL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreGraphics-F4J39XVM38RXEF32L8TZ7PRO3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Foundation-2VYSWP5TQ0566FEFLBSMVR5Y2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/MachO-I5OBDMD0V9NQP0QVH4JVFUWH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ImageIO-3ZUDDBP6QLR1MVX3K1BW22XI1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreText-45UA9SOUR0JA2MQ46WLXYHJ28.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ObjectiveC-CI01UOJRMH8NL7HFJQUGLJJZ1.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/os_object-6DF557U2QJRPYTK82QPB9PHYX.pcm
+
+ExtractAppIntentsMetadata (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.icyyHO/Metal.xctoolchain --module-name LNRCore --sdk-root /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 17.0 --bundle-identifier -d-latenightradio-ios.LNRCore --output /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.appintents --target-triple arm64-apple-ios17.0-simulator --target-triple x86_64-apple-ios17.0-simulator --binary-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.o --dependency-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore_dependency_info.dat --dependency-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore_dependency_info.dat --stringsdata-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --stringsdata-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.SwiftFileList --source-file-list /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.SwiftFileList --metadata-file-list /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/LNRCore.DependencyMetadataFileList --static-metadata-file-list /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/LNRCore.DependencyStaticMetadataFileList --swift-const-vals-list /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/arm64/LNRCore.SwiftConstValuesFileList --swift-const-vals-list /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LNRCore.build/Debug-iphonesimulator/LNRCore.build/Objects-normal/x86_64/LNRCore.SwiftConstValuesFileList --force --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-11-08 02:43:29.085 appintentsmetadataprocessor[5035:18768] Starting appintentsmetadataprocessor export
+2026-11-08 02:43:29.149 appintentsmetadataprocessor[5035:18768] Extracted no relevant App Intents symbols, skipping writing output
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/os_workgroup-6Z8ALR0AQ3UOG5E6GW63C91TU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/UIUtilities-DI6IX7MF99RRGAQMOCNT5S0GQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreMIDI-1WC399WM29H5PG48D0F9K9POY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/OSLog-1N054NKV0QJXJ2WLF6GD19HHD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/UserNotifications-AFKP4HZZ6FSLRVZFXOSG0L86N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/AudioToolbox-C4Y8RV2A2ELV3RUP3WV38UAJ8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreData-3V4SSWOXI6221Z0K1OAH7ZF6C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/FileProvider-99HSZ1B4TY96U677Y6LUWDCA6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Accessibility-9P8Q8ZSX0Z544GU3ZL4SHO4BB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/UniformTypeIdentifiers-EGRNRPQV3PD0L52SWFBS4UYCZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/IOSurface-3JBTA0CJCGVSQW5NGB0QXXCJV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreTransferable-9JNSTEQK4OGOL5ZR87R5LZO79.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/DataDetection-EYWISKZLBH7LKIVYCOPENEIME.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Metal-3PQ2MR6MK679CJD734X4ENQW0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Symbols-8E8D3K8XT3JRA3B2AWFE6RCN0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/OpenGLES-5FUKM8SCOYRVB8SPSDP3TLRV5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Dispatch-47287N6ZRAF5ZVT2SISLOKJR4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Network-C6PCC9HHEJ78TC64FXFURRE0Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreVideo-9U35TSFGE1QI2U7RZVP7ZMCIR.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/XPC-SQ17API9XVNMXGCU23B4RJNG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/AVRouting-AEJTDMURKA4HRWZXIGBXRTF6J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreMedia-93UTMELD37NDMTVU3DF5C94I.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/os-72VMN52XPCC291TKE47VPKDH1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreImage-DVTTAB62OZDPF694AI7VQWM0U.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/dnssd-EX06DR1F8ZS97WHGJB3EVLHIR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/MediaToolbox-CG9FSQPKJ2HXOPBF9JK064NNS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/AVFAudio-OVL1LKYCFB5CF5J0DYJIYXB5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreFoundation-5BX001JIOFGNEOFZB3MUEQ5MH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/QuartzCore-E7Y5JI1SCXG0MGSLQQINYRV5I.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreGraphics-7KVWZP2ZSLUR19R16GCKJOUO2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CFNetwork-DHGI1JDN0ZZ4FLODNATKQ5U1O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/UIKit-9G5FFJWIDIU8AH6SY3H8N7Q5T.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/ImageIO-3RAA8I7SGPIVY5SJEZ343O0AA.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreAudioTypes-ENSDP0Y6J1QELOCO87622EYCM.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreText-5A05YWF5UNG3YADV3TCMCNTLP.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreAudio-DPUGE5E48PEADCLGAKQGOUSQI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/AVFoundation-1KRWDQ09SBJ0GCS2LL6F5JWET.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/SwiftUICore-CXMR22EUMT0HFPPC10AVKHMQV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Speech-6Q8OEZIFIBT6PV68X09ZIGR9L.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Security-DLLFZXJS1LDH8RYKJF2RY3NTO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/SwiftUI-CJG8RKY6A5ND7BJ2KR75ZWPJL.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ LateNightRadio (in target 'LateNightRadio' from project 'LateNightRadio')
+
+EmitSwiftModule normal arm64 (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal arm64 Compiling\ Autopilot.swift,\ Extra.swift,\ LNRApp.swift,\ Live.swift,\ Model.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Autopilot.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Extra.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/LNRApp.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Live.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Model.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Autopilot.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Extra.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/LNRApp.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Live.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Model.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Foundation-1W4TPOIXKWXWG3MQV32FYEIFD.pcm
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for LateNightRadio (in target 'LateNightRadio' from project 'LateNightRadio')
+
+SwiftDriver\ Compilation\ Requirements LateNightRadio normal arm64 com.apple.xcode.tools.swift.compiler (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LateNightRadio -Onone @/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-generated-files.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-own-target-headers.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio-97d5c762bf88c43678641f8e16cf8794-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-project-headers.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio-Swift.h -working-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreMIDI-EF2FFRWNJQRWUKNB40L4S6JWY.pcm
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.swiftmodule (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.swiftmodule /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.swiftdoc (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.swiftdoc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.abi.json (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.abi.json /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.swiftsourceinfo (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.swiftsourceinfo /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/AudioToolbox-6IC6K2O6J18AEM8QUE5ILVXHL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Symbols-DE01S0WRE43O7TBE4M1ZBB5W.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreData-B8770IPW208LSYTDVPT85NWTH.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/UIUtilities-EH772VKDMCDS3EX5IRRPYY1Y1.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/OpenGLES-CS76AEKH6DTNDWP9WSEB5HAHN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/IOSurface-1NY6N75YD6B24NJ1LJ8SV5DU3.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/UniformTypeIdentifiers-170XRFXGPUUBI9HPJQ6R0ON1U.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Accessibility-EC9YN3NIEEVKJC05ZVQ1IOGKZ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/OSLog-9HF9SPEQB5OW2052PTE74AA9I.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreTransferable-31WBAZA6GHMRLDQ50RQ049G5T.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Network-7SDTRRUDKJSVWQXXHGMG6WTI4.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/FileProvider-66ZB7Y3FMJSZBBHBG6518FBES.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/AVRouting-6KVZZZCNXQ3XF2TFGLRAH17OH.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Metal-5D2DM6XLD128X91SOF3SW0WA5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/UserNotifications-27C1Z3DUBDATDE6KPO3QL3BBB.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/DataDetection-9OSEDZ8G19RVLAC81F44F3WR.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreVideo-PPFLAY5Z1UG81M5BECYTW268.pcm
+
+SwiftCompile normal arm64 Compiling\ Net.swift,\ Screens.swift,\ Sheets.swift,\ Speech.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Net.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Screens.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Sheets.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Speech.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Net.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Screens.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Sheets.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Sheets.swift:64:137: error: the compiler is unable to type-check this expression in reasonable time; try breaking up the expression into distinct sub-expressions
+                                    Text("\(r.job)・\(r.phase == "callback" ? m.t("callbackCall") + (r.res.map { "・" + m.t("res_\($0)") } ?? "") : m.t("firstCall") + (r.plan.isEmpty ? "" : "・" + m.t("planLabel") + r.plan))・\(r.at.formatted(date: .numeric, time: .shortened))")
+
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Speech.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+Failed frontend command:
+/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Autopilot.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Extra.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/LNRApp.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Live.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Model.swift -primary-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Net.swift -primary-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Screens.swift -primary-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Sheets.swift -primary-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Speech.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Store.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Theme.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/GeneratedAssetSymbols.swift -supplementary-output-file-map /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/supplementaryOutputs-5 -target arm64-apple-ios17.0-simulator -module-can-import-version DeveloperToolsSupport 23.40.26 23.40.26 -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio-dependencies-2.json -debug-module-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio.swiftmodule -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -I /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=4 -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -swift-version 5 -Onone -D DEBUG -serialize-debugging-options -const-gather-protocols-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS -enable-anonymous-context-mangled-names -file-compilation-dir /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-generated-files.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-own-target-headers.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio-97d5c762bf88c43678641f8e16cf8794-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-project-headers.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources -Xcc -DDEBUG\=1 -no-auto-bridging-header-chaining -module-name LateNightRadio -frontend-parseable-output -disable-clang-spi -clang-target arm64-apple-ios26.5-simulator -target-sdk-version 26.5 -target-sdk-name iphonesimulator26.5 -in-process-plugin-server-path /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/Net.o -o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/Screens.o -o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/Sheets.o -o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/Speech.o -index-unit-output-path /LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/Net.o -index-unit-output-path /LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/Screens.o -index-unit-output-path /LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/Sheets.o -index-unit-output-path /LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/Speech.o -index-store-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Index.noindex/DataStore -index-system-modules
+LinkAssetCatalog /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Assets.xcassets (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-linkAssetCatalog --thinned /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_output/thinned --thinned-dependencies /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_generated_info.plist_unthinned --output /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app --plist-output /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_generated_info.plist
+note: Emplaced /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/Assets.car (in target 'LateNightRadio' from project 'LateNightRadio')
+note: Emplaced /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/AppIcon76x76@2x~ipad.png (in target 'LateNightRadio' from project 'LateNightRadio')
+note: Emplaced /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/AppIcon60x60@2x.png (in target 'LateNightRadio' from project 'LateNightRadio')
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreImage-TIACTFSWMA1SPMYBHGVJ7ZCZ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/QuartzCore-87YQ9ZKB1XHLK6LKVRLMVTBBZ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/CoreMedia-EP1FIXGDDRY7WPBX29TCKSS2U.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/SwiftUICore-9FQIXZXVFL6LVBNR8A4M6V9TZ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/MediaToolbox-949JUT9HBKTKLFZA3JEE27VU6.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/UIKit-8FOW9XPYXD7EQPPPLPXHJ54WO.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/AVFAudio-E8BM7L0YLVAEFL0WTYIWXCSE6.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/SwiftUI-CY50UDYLW4NMX7769HQX9W0PL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/AVFoundation-D4DVGDXU48ES6GI42WYR3MAN6.pcm
+
+SwiftCompile normal arm64 Compiling\ Store.swift,\ Theme.swift,\ Voice.swift,\ GeneratedAssetSymbols.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Store.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Theme.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Store.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:130:60: warning: capture of 'src' with non-Sendable type 'AVAudioPCMBuffer' in a '@Sendable' closure
+            fed = true; status.pointee = .haveData; return src
+                                                           ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/System/Library/Frameworks/AVFAudio.framework/Headers/AVAudioBuffer.h:67:12: note: class 'AVAudioPCMBuffer' does not conform to the 'Sendable' protocol
+@interface AVAudioPCMBuffer : AVAudioBuffer
+           ^
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:1:1: warning: add '@preconcurrency' to suppress 'Sendable'-related warnings from module 'AVFAudio'
+import AVFoundation
+^
+@preconcurrency 
+
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Theme.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:130:60: warning: capture of 'src' with non-Sendable type 'AVAudioPCMBuffer' in a '@Sendable' closure
+            fed = true; status.pointee = .haveData; return src
+                                                           ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/System/Library/Frameworks/AVFAudio.framework/Headers/AVAudioBuffer.h:67:12: note: class 'AVAudioPCMBuffer' does not conform to the 'Sendable' protocol
+@interface AVAudioPCMBuffer : AVAudioBuffer
+           ^
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:1:1: warning: add '@preconcurrency' to suppress 'Sendable'-related warnings from module 'AVFAudio'
+import AVFoundation
+^
+@preconcurrency 
+
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:130:60: warning: capture of 'src' with non-Sendable type 'AVAudioPCMBuffer' in a '@Sendable' closure
+            fed = true; status.pointee = .haveData; return src
+                                                           ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/System/Library/Frameworks/AVFAudio.framework/Headers/AVAudioBuffer.h:67:12: note: class 'AVAudioPCMBuffer' does not conform to the 'Sendable' protocol
+@interface AVAudioPCMBuffer : AVAudioBuffer
+           ^
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:1:1: warning: add '@preconcurrency' to suppress 'Sendable'-related warnings from module 'AVFAudio'
+import AVFoundation
+^
+@preconcurrency 
+
+SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:130:60: warning: capture of 'src' with non-Sendable type 'AVAudioPCMBuffer' in a '@Sendable' closure
+            fed = true; status.pointee = .haveData; return src
+                                                           ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/System/Library/Frameworks/AVFAudio.framework/Headers/AVAudioBuffer.h:67:12: note: class 'AVAudioPCMBuffer' does not conform to the 'Sendable' protocol
+@interface AVAudioPCMBuffer : AVAudioBuffer
+           ^
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:1:1: warning: add '@preconcurrency' to suppress 'Sendable'-related warnings from module 'AVFAudio'
+import AVFoundation
+^
+@preconcurrency 
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Speech-6HI0SFVNJZDSGVK0ZX5ORC383.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling Autopilot.swift, Extra.swift, LNRApp.swift, Live.swift, Model.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+
+SwiftEmitModule normal x86_64 Emitting\ module\ for\ LateNightRadio (in target 'LateNightRadio' from project 'LateNightRadio')
+
+EmitSwiftModule normal x86_64 (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal x86_64 Compiling\ Store.swift,\ Theme.swift,\ Voice.swift,\ GeneratedAssetSymbols.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Store.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Theme.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Store.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:130:60: warning: capture of 'src' with non-Sendable type 'AVAudioPCMBuffer' in a '@Sendable' closure
+            fed = true; status.pointee = .haveData; return src
+                                                           ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/System/Library/Frameworks/AVFAudio.framework/Headers/AVAudioBuffer.h:67:12: note: class 'AVAudioPCMBuffer' does not conform to the 'Sendable' protocol
+@interface AVAudioPCMBuffer : AVAudioBuffer
+           ^
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:1:1: warning: add '@preconcurrency' to suppress 'Sendable'-related warnings from module 'AVFAudio'
+import AVFoundation
+^
+@preconcurrency 
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Theme.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:130:60: warning: capture of 'src' with non-Sendable type 'AVAudioPCMBuffer' in a '@Sendable' closure
+            fed = true; status.pointee = .haveData; return src
+                                                           ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/System/Library/Frameworks/AVFAudio.framework/Headers/AVAudioBuffer.h:67:12: note: class 'AVAudioPCMBuffer' does not conform to the 'Sendable' protocol
+@interface AVAudioPCMBuffer : AVAudioBuffer
+           ^
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:1:1: warning: add '@preconcurrency' to suppress 'Sendable'-related warnings from module 'AVFAudio'
+import AVFoundation
+^
+@preconcurrency 
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:130:60: warning: capture of 'src' with non-Sendable type 'AVAudioPCMBuffer' in a '@Sendable' closure
+            fed = true; status.pointee = .haveData; return src
+                                                           ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/System/Library/Frameworks/AVFAudio.framework/Headers/AVAudioBuffer.h:67:12: note: class 'AVAudioPCMBuffer' does not conform to the 'Sendable' protocol
+@interface AVAudioPCMBuffer : AVAudioBuffer
+           ^
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:1:1: warning: add '@preconcurrency' to suppress 'Sendable'-related warnings from module 'AVFAudio'
+import AVFoundation
+^
+@preconcurrency 
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:130:60: warning: capture of 'src' with non-Sendable type 'AVAudioPCMBuffer' in a '@Sendable' closure
+            fed = true; status.pointee = .haveData; return src
+                                                           ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/System/Library/Frameworks/AVFAudio.framework/Headers/AVAudioBuffer.h:67:12: note: class 'AVAudioPCMBuffer' does not conform to the 'Sendable' protocol
+@interface AVAudioPCMBuffer : AVAudioBuffer
+           ^
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Voice.swift:1:1: warning: add '@preconcurrency' to suppress 'Sendable'-related warnings from module 'AVFAudio'
+import AVFoundation
+^
+@preconcurrency 
+
+SwiftDriverJobDiscovery normal x86_64 Emitting module for LateNightRadio (in target 'LateNightRadio' from project 'LateNightRadio')
+
+SwiftDriver\ Compilation\ Requirements LateNightRadio normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LateNightRadio -Onone @/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target x86_64-apple-ios17.0-simulator -g -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -c -j3 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-688ef53f1462e2c8f657fdc38a81448ff45c64a1807a658693f2a61704f17a36.sdkstatcache -output-file-map /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-generated-files.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-own-target-headers.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio-97d5c762bf88c43678641f8e16cf8794-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/LateNightRadio-project-headers.hmap -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources-normal/x86_64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/x86_64 -Xcc -I/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio-Swift.h -working-directory /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling Store.swift, Theme.swift, Voice.swift, GeneratedAssetSymbols.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+
+SwiftCompile normal x86_64 Compiling\ Net.swift,\ Screens.swift,\ Sheets.swift,\ Speech.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Net.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Screens.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Sheets.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Speech.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Net.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Screens.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Sheets.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Speech.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftMergeGeneratedHeaders /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/LateNightRadio-Swift.h /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio-Swift.h /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio-Swift.h (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-swiftHeaderTool -arch arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio-Swift.h -arch x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio-Swift.h -o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/DerivedSources/LateNightRadio-Swift.h
+
+SwiftDriverJobDiscovery normal x86_64 Compiling Store.swift, Theme.swift, Voice.swift, GeneratedAssetSymbols.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/x86_64-apple-ios-simulator.swiftmodule /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.swiftmodule (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.swiftmodule /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/x86_64-apple-ios-simulator.swiftmodule
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/x86_64-apple-ios-simulator.swiftdoc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.swiftdoc (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.swiftdoc /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/x86_64-apple-ios-simulator.swiftdoc
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/x86_64-apple-ios-simulator.abi.json /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.abi.json (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.abi.json /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/x86_64-apple-ios-simulator.abi.json
+
+Copy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.swiftsourceinfo (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio.swiftsourceinfo /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo
+
+SwiftCompile normal x86_64 Compiling\ Autopilot.swift,\ Extra.swift,\ LNRApp.swift,\ Live.swift,\ Model.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Autopilot.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Extra.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/LNRApp.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Live.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Model.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Autopilot.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Extra.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/LNRApp.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Live.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftCompile normal x86_64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Model.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    
+
+SwiftDriverJobDiscovery normal x86_64 Compiling Autopilot.swift, Extra.swift, LNRApp.swift, Live.swift, Model.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+
+RegisterExecutionPolicyException /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.o (in target 'LNRCore' from project 'LNRCore')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-RegisterExecutionPolicyException /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LNRCore.o
+
+ProcessInfoPlistFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/Info.plist /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Info.plist (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-infoPlistUtility /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/assetcatalog_generated_info.plist -o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/Info.plist
+
+Ld /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/Binary/__preview.dylib normal x86_64 (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -install_name @rpath/LateNightRadio.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/LateNightRadio_dependency_info.dat -o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/Binary/__preview.dylib
+
+Ld /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/Binary/__preview.dylib normal arm64 (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -F/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator -install_name @rpath/LateNightRadio.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/LateNightRadio_dependency_info.dat -o /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/Binary/__preview.dylib
+
+CpResource /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/PrivacyInfo.xcprivacy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/PrivacyInfo.xcprivacy (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/PrivacyInfo.xcprivacy /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app
+
+CreateUniversalBinary /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/__preview.dylib normal arm64\ x86_64 (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/arm64/Binary/__preview.dylib /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Intermediates.noindex/LateNightRadio.build/Debug-iphonesimulator/LateNightRadio.build/Objects-normal/x86_64/Binary/__preview.dylib -output /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/__preview.dylib
+
+CpResource /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/GameData /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/GameData (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/GameData /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app
+
+CpResource /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/Art /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Art (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Art /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app
+
+CopyStringsFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/zh-Hant.lproj/InfoPlist.strings /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/zh-Hant.lproj/InfoPlist.strings (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copyStrings --validate --outputencoding binary --outfilename InfoPlist.strings --outdir /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/zh-Hant.lproj -- /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/zh-Hant.lproj/InfoPlist.strings
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/zh-Hant.lproj/InfoPlist.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'LateNightRadio' from project 'LateNightRadio')
+
+CopyStringsFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/ko.lproj/InfoPlist.strings /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/ko.lproj/InfoPlist.strings (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copyStrings --validate --outputencoding binary --outfilename InfoPlist.strings --outdir /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/ko.lproj -- /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/ko.lproj/InfoPlist.strings
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/ko.lproj/InfoPlist.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'LateNightRadio' from project 'LateNightRadio')
+
+CopyStringsFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/ja.lproj/InfoPlist.strings /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/ja.lproj/InfoPlist.strings (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copyStrings --validate --outputencoding binary --outfilename InfoPlist.strings --outdir /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/ja.lproj -- /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/ja.lproj/InfoPlist.strings
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/ja.lproj/InfoPlist.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'LateNightRadio' from project 'LateNightRadio')
+
+CopyStringsFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/es.lproj/InfoPlist.strings /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/es.lproj/InfoPlist.strings (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copyStrings --validate --outputencoding binary --outfilename InfoPlist.strings --outdir /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/es.lproj -- /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/es.lproj/InfoPlist.strings
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/es.lproj/InfoPlist.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'LateNightRadio' from project 'LateNightRadio')
+
+CopyStringsFile /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/en.lproj/InfoPlist.strings /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/en.lproj/InfoPlist.strings (in target 'LateNightRadio' from project 'LateNightRadio')
+    cd /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS
+    builtin-copyStrings --validate --outputencoding binary --outfilename InfoPlist.strings --outdir /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/build/Build/Products/Debug-iphonesimulator/LateNightRadio.app/en.lproj -- /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/en.lproj/InfoPlist.strings
+/Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/Resources/Localized/en.lproj/InfoPlist.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'LateNightRadio' from project 'LateNightRadio')
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Sheets.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+	SwiftCompile normal arm64 Compiling\ Net.swift,\ Screens.swift,\ Sheets.swift,\ Speech.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Net.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Screens.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Sheets.swift /Users/runner/work/3D_LateNightRadio_iOS/3D_LateNightRadio_iOS/App/Speech.swift (in target 'LateNightRadio' from project 'LateNightRadio')
+	Building project LateNightRadio with scheme LateNightRadio and configuration Debug
+(3 failures)
