@@ -21,7 +21,7 @@ struct Autopilot {
             try? FileManager.default.removeItem(at: dir)
             try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
             var k = 0
-            func shot(_ name: String) async {
+            @MainActor func shot(_ name: String) async {
                 try? await Task.sleep(nanoseconds: 900_000_000)
                 k += 1
                 guard let w = UIApplication.shared.connectedScenes.compactMap({ ($0 as? UIWindowScene)?.keyWindow }).first else { return }
@@ -29,7 +29,13 @@ struct Autopilot {
                 try? img.pngData()?.write(to: dir.appendingPathComponent(String(format: "%02d_%@.png", k, name)))
                 print("AUTOPILOT shot \(name)")
             }
-            func idle() async { for _ in 0..<200 { if !m.busy && !m.loading { break }; try? await Task.sleep(nanoseconds: 100_000_000) } }
+            @MainActor func idle() async {
+                for _ in 0..<200 {
+                    let waiting = m.busy || m.loading
+                    if !waiting { break }
+                    try? await Task.sleep(nanoseconds: 100_000_000)
+                }
+            }
             let host = Self.lines[m.lang] ?? Self.lines["en"]!
 
             // 每次從乾淨的存檔開始
