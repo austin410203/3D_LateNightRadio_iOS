@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "深夜電台";
+"CFBundleName" = "深夜電台";
+"NSMicrophoneUsageDescription" = "按住麥克風跟來電者說話時需要用到麥克風。";
+"NSSpeechRecognitionUsageDescription" = "把你說的話轉成文字放進輸入框（支援的語言在 iPhone 上辨識）。";

@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "Late Night Radio";
+"CFBundleName" = "Late Night Radio";
+"NSMicrophoneUsageDescription" = "The microphone is used while you hold the mic button to talk to callers.";
+"NSSpeechRecognitionUsageDescription" = "Turns what you say into text in the reply box (on the device for supported languages).";

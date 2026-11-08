@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "深夜ラジオ";
+"CFBundleName" = "深夜ラジオ";
+"NSMicrophoneUsageDescription" = "マイクボタンを押している間、リスナーと話すためにマイクを使います。";
+"NSSpeechRecognitionUsageDescription" = "話した言葉を入力欄の文字に変換します（対応言語は端末内で認識）。";

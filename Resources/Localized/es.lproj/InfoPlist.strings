@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "Radio de Medianoche";
+"CFBundleName" = "Radio de Medianoche";
+"NSMicrophoneUsageDescription" = "El micrófono se usa mientras mantienes el botón para hablar con los oyentes.";
+"NSSpeechRecognitionUsageDescription" = "Convierte lo que dices en texto en la casilla de respuesta (en el dispositivo para los idiomas compatibles).";

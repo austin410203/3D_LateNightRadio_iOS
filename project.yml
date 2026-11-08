@@ -1,0 +1,65 @@
+# 深夜電台 原生 iOS App（SwiftUI）。CI 用 XcodeGen 產生 LateNightRadio.xcodeproj（不進 git）：brew install xcodegen && xcodegen generate
+name: LateNightRadio
+options:
+  bundleIdPrefix: com.austin410203
+  deploymentTarget: { iOS: "17.0" }
+  createIntermediateGroups: true
+  developmentLanguage: en
+settings:
+  base:
+    SWIFT_VERSION: "5.10"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: M3FNV67WZ3
+packages:
+  LNRCore: { path: . }
+targets:
+  LateNightRadio:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Resources/GameData
+        type: folder
+      - path: Resources/Art
+        type: folder
+      - path: Resources/Assets.xcassets
+      - path: Resources/PrivacyInfo.xcprivacy
+      - path: Resources/Localized
+    dependencies:
+      - package: LNRCore
+      - sdk: Speech.framework
+      - sdk: AVFoundation.framework
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.austin410203.latenightradio
+        PRODUCT_NAME: LateNightRadio
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SUPPORTS_MACCATALYST: NO
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+        ENABLE_PREVIEWS: NO
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Late Night Radio
+        CFBundleName: Late Night Radio
+        CFBundleIdentifier: $(PRODUCT_BUNDLE_IDENTIFIER)
+        CFBundleExecutable: $(EXECUTABLE_NAME)
+        CFBundlePackageType: APPL
+        CFBundleDevelopmentRegion: en
+        CFBundleLocalizations: [zh-Hant, en, ja, ko, es]
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSRequiresIPhoneOS: true
+        LSApplicationCategoryType: public.app-category.role-playing-games
+        UILaunchScreen: { UIColorName: LaunchBG }
+        UIStatusBarStyle: UIStatusBarStyleLightContent
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIApplicationSceneManifest: { UIApplicationSupportsMultipleScenes: false }
+        NSMicrophoneUsageDescription: The microphone is used while you hold the mic button to talk to callers.
+        NSSpeechRecognitionUsageDescription: Turns what you say into text in the reply box (on the device for supported languages).
+        ITSAppUsesNonExemptEncryption: false

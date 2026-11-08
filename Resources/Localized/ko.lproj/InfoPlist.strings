@@ -1,0 +1,4 @@
+"CFBundleDisplayName" = "심야 라디오";
+"CFBundleName" = "심야 라디오";
+"NSMicrophoneUsageDescription" = "마이크 버튼을 누르고 청취자와 이야기할 때 마이크를 사용해요.";
+"NSSpeechRecognitionUsageDescription" = "말한 내용을 입력창의 글자로 바꿔요(지원 언어는 기기 안에서 인식).";
