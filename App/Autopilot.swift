@@ -29,7 +29,7 @@ struct Autopilot {
                 try? img.pngData()?.write(to: dir.appendingPathComponent(String(format: "%02d_%@.png", k, name)))
                 print("AUTOPILOT shot \(name)")
             }
-            func idle() async { for _ in 0..<200 where m.busy || m.loading { try? await Task.sleep(nanoseconds: 100_000_000) } }
+            func idle() async { for _ in 0..<200 { if !m.busy && !m.loading { break }; try? await Task.sleep(nanoseconds: 100_000_000) } }
             let host = Self.lines[m.lang] ?? Self.lines["en"]!
 
             // 每次從乾淨的存檔開始
